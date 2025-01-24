@@ -1,0 +1,113 @@
+[23-Jan-2025 12:58:33 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '001/1.01.02/PK - SERT/DD/I/2025' for key 'no_piagam' in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php:26
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php(26): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php on line 26
+[23-Jan-2025 13:43:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 180
+[23-Jan-2025 13:43:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 182
+[23-Jan-2025 13:43:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 183
+[23-Jan-2025 13:43:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 187
+[23-Jan-2025 13:43:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 208
+[23-Jan-2025 13:43:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 210
+[23-Jan-2025 13:49:51 Asia/Jakarta] PHP Warning:  Undefined array key "nama" in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php on line 14
+[23-Jan-2025 13:49:51 Asia/Jakarta] PHP Warning:  Undefined array key "id_donor" in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php on line 15
+[23-Jan-2025 13:49:51 Asia/Jakarta] PHP Warning:  Undefined array key "no_hp" in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php on line 16
+[23-Jan-2025 13:49:51 Asia/Jakarta] PHP Warning:  Undefined array key "tanggal_lahir" in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php on line 17
+[23-Jan-2025 13:49:51 Asia/Jakarta] PHP Warning:  Undefined array key "nosertifikat" in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php on line 18
+[23-Jan-2025 13:49:51 Asia/Jakarta] PHP Warning:  Undefined array key "kategori" in /home/bikm9652/public_html/sertifikat/aksi_sertifikat.php on line 19
+[23-Jan-2025 13:50:04 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 180
+[23-Jan-2025 13:50:04 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 182
+[23-Jan-2025 13:50:04 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 183
+[23-Jan-2025 13:50:04 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 187
+[23-Jan-2025 13:50:04 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 208
+[23-Jan-2025 13:50:04 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 210
+[23-Jan-2025 13:50:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 180
+[23-Jan-2025 13:50:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 182
+[23-Jan-2025 13:50:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 183
+[23-Jan-2025 13:50:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 187
+[23-Jan-2025 13:50:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 208
+[23-Jan-2025 13:50:27 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 210
+[23-Jan-2025 13:50:31 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 180
+[23-Jan-2025 13:50:31 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 182
+[23-Jan-2025 13:50:31 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 183
+[23-Jan-2025 13:50:31 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 187
+[23-Jan-2025 13:50:31 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 208
+[23-Jan-2025 13:50:31 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 210
+[23-Jan-2025 13:55:44 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 180
+[23-Jan-2025 13:55:44 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 182
+[23-Jan-2025 13:55:44 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 183
+[23-Jan-2025 13:55:44 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 187
+[23-Jan-2025 13:55:44 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 208
+[23-Jan-2025 13:55:44 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 210
+[23-Jan-2025 14:08:23 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 180
+[23-Jan-2025 14:08:23 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 182
+[23-Jan-2025 14:08:23 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 183
+[23-Jan-2025 14:08:23 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 187
+[23-Jan-2025 14:08:23 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 208
+[23-Jan-2025 14:08:23 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 210
+[23-Jan-2025 14:10:08 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 180
+[23-Jan-2025 14:10:08 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 182
+[23-Jan-2025 14:10:08 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 183
+[23-Jan-2025 14:10:08 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 187
+[23-Jan-2025 14:10:08 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 208
+[23-Jan-2025 14:10:08 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/bikm9652/public_html/sertifikat/cetak_sertifikat.php on line 210
+[23-Jan-2025 14:13:35 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:02 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:10 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:10 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:11 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:11 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:13 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' AND kategori = '10' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:16 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' AND kategori = '25' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:21 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:22 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:23 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' AND kategori = '25' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
+[23-Jan-2025 14:14:25 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND YEAR(tanggal) = '2025' AND kategori = '25' ORDER BY id ASC' at line 1 in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php:28
+Stack trace:
+#0 /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php(28): mysqli_query()
+#1 {main}
+  thrown in /home/bikm9652/public_html/sertifikat/get_sertifikat_data.php on line 28
