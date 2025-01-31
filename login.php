@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/img/icon.png">
 
-    <title>Aplikasi Piagam</title>
+    <title>Aplikasi Sertifikat</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -110,7 +110,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./">Aplikasi Piagam</a>
+            <a class="navbar-brand" href="./">Aplikasi Sertifikat</a>
         </div>
     </div>
 </nav>
@@ -122,48 +122,17 @@
                 <center><h3 class="panel-title"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> LOGIN PETUGAS</h3></center>
             </div>
             <div class="panel-body">
-				<?php 
-				if($_SERVER['REQUEST_METHOD']=='POST'){
-					$user	= $_POST['username'];
-					$pass	= $_POST['password'];
-					$p		= md5($pass);
-					if($user=='' || $pass==''){
-						?>
-						<div class="alert alert-warning alert-dismissible" role="alert">
-						  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						  <?php
-						  echo "<strong>Error!</strong> Form Belum Lengkap!!";
-						  ?>
-						</div>
-						<?php
-					}else{
-						include "koneksi.php";
-						$sqlLogin = mysqli_query($konek, "SELECT * FROM admin WHERE username='$user' AND password='$p'");
-						$jml=mysqli_num_rows($sqlLogin);
-						$d=mysqli_fetch_array($sqlLogin);
-						if($jml > 0){
-							session_start();
-							$_SESSION['login']		= TRUE;
-							$_SESSION['id']			= $d['idadmin'];
-							$_SESSION['username']	= $d['username'];
-							$_SESSION['namalengkap']= $d['namalengkap'];
-							
-							header('Location:./index.php');
-						}else{
-						?>
-                    <div class="alert alert-danger alert-dismissible" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							  <?php
-							  echo "<strong>Error!</strong> Username dan Password anda Salah!!!";
-							  ?>
-                    </div>
-						<?php
-						}
-						
-					}
-				}
-				?>
-
+                <?php 
+                if(isset($_GET['error'])){
+                    $error = $_GET['error'];
+                        ?>
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <strong>Error!</strong> <?php echo $error; ?>
+                        </div>
+                        <?php
+                }
+                ?>
 
                 <form method="post" action="validation.php" role="form">
                     <div class="form-group">
@@ -183,10 +152,10 @@
     <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-danger">
             <div class="panel-heading">
-                <center><h3 class="panel-title">Cek Validasi Piagam</h3></center>
+                <center><h3 class="panel-title">Cek Validasi Sertifikat</h3></center>
             </div>
             <div class="panel-body">
-                <center><p>Untuk melakukan pengecekan Piagam, pastikan anda menggunakan perangkat yang memiliki kamera seperti laptop/smartphone.</p></center>
+                <center><p>Untuk melakukan pengecekan Sertifikat, pastikan anda menggunakan perangkat yang memiliki kamera seperti laptop/smartphone.</p></center>
                 <center><a href="./scanner.php" class="btn btn-danger">Cek Validasi QR Code</a></center>
             </div>
         </div>
