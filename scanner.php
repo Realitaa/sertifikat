@@ -34,7 +34,7 @@ include "koneksi.php";
     <link href="./assets/style.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="bg-danger">
 
 <nav class="navbar navbar-default">
   <div class="container">
@@ -50,7 +50,7 @@ include "koneksi.php";
 <div class="container">
 <div class="row">
   <div class="col-md-4 col-md-offset-4">
-    <div class="panel panel-danger">
+    <div class="panel panel-primary">
       <div class="panel-heading">
         <h3 class="panel-title">Arahkan Kode QR Ke Kamera!</h3>
       </div>

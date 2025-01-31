@@ -13,7 +13,7 @@
 				<form method="post" action="aksi_sertifikat.php?act=insert">
 					<table class="table">
 						<tr>
-							<td width="160px">Nama Pendonor</td>
+							<td class="" width="160px">Nama Pendonor</td>
 							<td>
 								<div class="col-md-6"><input class="form-control" type="text" name="nama" required /></div>
 							</td>

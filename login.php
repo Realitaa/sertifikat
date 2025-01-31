@@ -100,7 +100,7 @@
 }
 	</style>
 </head>
-<body>
+<body class="bg-danger">
 <nav class="navbar navbar-default">
   <div class="col-md-5 col-md-offset-5">
         <div class="navbar-header">

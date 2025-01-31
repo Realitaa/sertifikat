@@ -1,7 +1,7 @@
 
 	<footer class="footer">
       <div class="container">
-        <p class="text-muted"><a href="https://bikinbagoes.my.id" target="_blank">bikinbagoes.my.id</a> Tahun 2024</p>
+        <center><p class="text-muted"><a href="https://bikinbagoes.my.id" target="_blank">bikinbagoes.my.id</a> Tahun 2024</p></center>
       </div>
     </footer>
 

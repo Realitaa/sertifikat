@@ -34,9 +34,9 @@ include "koneksi.php";
     <link href="./assets/style.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="bg-danger">
 <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
