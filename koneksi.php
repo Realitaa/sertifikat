@@ -1,6 +1,7 @@
 <?php
+session_start();
 //variabel koneksi
-$konek = mysqli_connect("localhost","bikm9652_aset","Elang!ok","bikm9652_qrsertifikat");
+$konek = mysqli_connect("localhost","root","","qrsertifikat");
 
 if(!$konek){
 	echo "Koneksi Database Gagal...!!!";

@@ -1,5 +1,11 @@
 <?php
     include "koneksi.php";
+    ob_start();
+    if (!isset($_SESSION['login'])) {
+        echo '<link rel="stylesheet" href="watermark.css">';
+    } else {
+        $style = ''; 
+    }
 ?>
 
     <!DOCTYPE html>
@@ -143,27 +149,6 @@
         </style>
     </head>
 
-    <?php ob_start();
-session_start();
- if (!isset($_SESSION['login'])) : ?>
-    <style>
-        .container::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-15deg); /* Tambahkan rotasi */
-            background: url('./assets/img/valid-stemp.png') no-repeat center center;
-            background-size: 678px 255px; /* Ukuran watermark */
-            opacity: 0.5; /* Transparansi watermark */
-            width: 678px; /* Sama seperti background-size */
-            height: 255px; /* Sama seperti background-size */
-            z-index: 0; /* Letakkan di belakang konten */
-        }
-    </style>
-<?php endif; ?>
-
-
     <body>
         <div class="container">
             <?php
@@ -257,7 +242,28 @@ session_start();
 
         <button class="print-btn" onclick="window.print()">Print</button>
     </body>
+    <script>
+        window.onbeforeprint = function() {
+            let watermark = document.createElement("img");
+            watermark.src = "assets/img/valid-stemp.png";
+            watermark.style.position = "absolute";
+            watermark.style.top = "50%";
+            watermark.style.left = "50%";
+            watermark.style.transform = "translate(-50%, -50%) rotate(-15deg)";
+            watermark.style.width = "678px";
+            watermark.style.height = "255px";
+            watermark.style.opacity = "0.5";
+            watermark.style.zIndex = "-1";
+            
+            document.body.appendChild(watermark);
+        };
 
+        window.onafterprint = function() {
+            let watermarks = document.querySelectorAll("img[src='assets/img/valid-stemp.png']");
+            watermarks.forEach(wm => wm.remove());
+        };
+
+    </script>
     </html>
 
 <?php

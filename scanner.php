@@ -62,7 +62,7 @@ include "koneksi.php";
         <div id="reader" style="margin-top: 10px;"></div>
       </div>
       <div class="panel-footer">
-          <center><a class="btn btn-danger" href="../">Kembali</a></center>
+          <center><a class="btn btn-danger" href="./">Kembali</a></center>
       </div>
     </div>
   </div>
