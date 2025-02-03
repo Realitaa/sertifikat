@@ -6,11 +6,8 @@
 		</div>
 		<div class="panel-body">
             <center>
-			    <img src="assets/img/logo.png" alt="..." class="img-thumbnail">
+			    <img src="assets/img/sertifikatlogo.png" alt="..." class="img-thumbnail">
             </center>
-		</div>
-		<div class="panel-footer">
-			
 		</div>
 	</div>
 </div>

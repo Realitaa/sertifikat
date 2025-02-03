@@ -37,6 +37,17 @@ if(isset($_GET['act'])){
 	    } else {
 	        header('location:data_sertifikat.php');
 	    }
+	} else if ($_GET['act'] == 'afterprint') {
+	    $id = $_POST['id'];
+
+		if ($id) {
+			$id = intval($id);
+
+			$update = mysqli_query($konek, "UPDATE dsertifikat SET banyak_copy = banyak_copy + 1 WHERE id = $id");
+		} else {
+			header('Content-Type: application/json');
+			echo json_encode(['status' => 'error', 'message' => 'Gagal menambahkan jumlah cetak']);		
+		}
 	}
 
 	else{
