@@ -45,6 +45,7 @@ while ($d = mysqli_fetch_array($sql)) {
         <td>$d[tanggal_lahir]</td>
         <td>$d[no_sertifikat]</td>
         <td>$d[kategori]</td>
+        <td>$d[banyak_copy]</td>
         <td align='center'>$cetak <a href='aksi_sertifikat.php?act=delete&id=$d[id]' class='btn btn-danger btn-sm'>Hapus</a></td>
     </tr>";
     $no++;

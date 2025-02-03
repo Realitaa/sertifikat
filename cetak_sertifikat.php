@@ -36,6 +36,7 @@
                 border: 1px solid #ddd;
                 position: relative;
                 overflow: hidden;
+                z-index: 0;
             }
 
             .container > * {
@@ -246,7 +247,12 @@
             </div>
         </div>
 
-        <button class="print-btn" onclick="window.print()">Print</button>
+        <?php
+            ob_start();
+            if (isset($_SESSION['login'])) {
+                echo '<button class="print-btn" onclick="window.print()">Print</button>';
+            }
+        ?>
     </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -273,13 +279,13 @@
 
         window.addEventListener("afterprint", function() {
             $.ajax({
-                url: 'aksi_sertifikat.php?act=afterprint', // Buat file PHP terpisah untuk mengambil data
+                url: 'aksi_sertifikat.php?act=afterprint', 
                 type: 'POST',
                 data: {
                     id : <?php echo $_GET['id']; ?>
                 },
                 success: function(response) {
-                    console.log('banyak copy sudah diperbarui');
+                    // console.log('banyak copy sudah diperbarui');
                 },
                 error: function(xhr, status, error) {
                     console.error('Error: ' + error);

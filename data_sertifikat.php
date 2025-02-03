@@ -50,6 +50,7 @@
                             <th>Tanggal Lahir</th>
                             <th>Nomor Sertifikat</th>
                             <th>Kategori</th>
+                            <th>Banyak Copy</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
