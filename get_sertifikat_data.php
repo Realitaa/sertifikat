@@ -33,7 +33,7 @@ while ($d = mysqli_fetch_array($sql)) {
     if ($d['kategori'] >= 10) {
         $cetak = "
             <a class='btn btn-success btn-sm' href='cetak_sertifikat.php?id=$d[id]' 
-            target='_blank' id='cetak-btn-$d[id]'>Cetak</a>
+            target='_blank' id='cetak-btn-$d[id]'>View</a>
         ";
     }
     echo "<tr>
