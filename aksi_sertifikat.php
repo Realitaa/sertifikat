@@ -38,7 +38,7 @@ if(isset($_GET['act'])){
 	    if ($id) {
 	        $hapus = mysqli_query($konek, "DELETE FROM dsertifikat WHERE id = $id");
 	        if ($hapus) {
-	            echo '<script>alert("Data berhasil di hapus")</script>';
+	            
 	            header('location:data_sertifikat.php');
 	        }
 	    } else {
