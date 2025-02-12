@@ -19,11 +19,18 @@ if(isset($_GET['act'])){
 		$kategori	= $_POST['kategori'];
 		
 		if($nama=='' || $nosertifikat=='' || $kategori==''){
-			header('location:data_sertifikat.php');
+			echo "<script>
+			        alert('Data tidak lengkap');
+			        window.location.href = 'data_sertifikat.php';
+			    </script>";
 		}else{			
 			//proses simpan data admin
 			$simpan = mysqli_query($konek, "INSERT INTO dsertifikat(nama, id_donor, no_hp, tanggal_lahir, no_sertifikat,kategori) 
 							VALUES ('$nama', '$id_donor', '$no_hp', '$tanggal_lahir','$nosertifikat','$kategori')");
+
+			if ($simpan) {
+				header('location:data_sertifikat.php');
+			}
 		}
 	} else if ($_GET['act']=='delete'){
 	    $id = $_GET['id'];
