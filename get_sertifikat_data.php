@@ -23,7 +23,7 @@ if (!empty($search)) {
     $query .= " AND (nama LIKE '%$search%' OR no_hp LIKE '%$search%' OR no_sertifikat LIKE '%$search%' OR id_donor LIKE '%$search%' OR banyak_copy LIKE '%$search%')";
 }
 
-$query .= " ORDER BY id ASC"; // Urutkan berdasarkan ID
+$query .= " ORDER BY id DESC"; // Urutkan berdasarkan ID secara DESC
 
 $sql = mysqli_query($konek, $query);
 $no = 1;
