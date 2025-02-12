@@ -51,7 +51,7 @@ include "koneksi.php";
           <ul class="nav navbar-nav">
             <li><a href="tambah_data.php">Tambah Data</a></li>
             <li><a href="data_sertifikat.php">Sertifikat</a></li>
-            <li><a href="scanner.php">Validasi Sertifikat</a></li>
+<!--             <li><a href="scanner.php">Validasi Sertifikat</a></li> -->
             <li><a href="logout.php">Keluar</a></li>
           </ul>
         </div><!--/.nav-collapse -->
