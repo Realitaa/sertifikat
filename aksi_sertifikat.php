@@ -17,13 +17,19 @@ if(isset($_GET['act'])){
 		$tanggal_lahir 	= $_POST['tanggal_lahir'];
 		$nosertifikat = $_POST['nosertifikat'];
 		$kategori	= $_POST['kategori'];
+
+		// Mengecek apakah id_donor sudah ada di database
+		$cek = mysqli_query($konek, "SELECT id, id_donor, kategori FROM dsertifikat WHERE id_donor = '$id_donor'");
+		$data = mysqli_fetch_array($cek);
 		
 		if($nama=='' || $nosertifikat=='' || $kategori==''){
 			echo "<script>
 			        alert('Data tidak lengkap');
 			        window.location.href = 'data_sertifikat.php';
 			    </script>";
-		}else{			
+		} else if($data['kategori'] == $kategori){
+			header('location:data_sertifikat.php?id_donor='.$id_donor.'&kategori='.$kategori);
+		} else{			
 			//proses simpan data admin
 			$simpan = mysqli_query($konek, "INSERT INTO dsertifikat(nama, id_donor, no_hp, tanggal_lahir, no_sertifikat,kategori) 
 							VALUES ('$nama', '$id_donor', '$no_hp', '$tanggal_lahir','$nosertifikat','$kategori')");
