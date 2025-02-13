@@ -139,6 +139,7 @@
             $('#filter-kategori').val('');
             $('#search-input').val('');
             loadData(currentYear, '', ''); // Memuat data setelah reset filter
+            $('#data-exist').hide(); // Menyembunyikan pesan data sudah ada
         }
 
         // Attach resetFilter function to button click
