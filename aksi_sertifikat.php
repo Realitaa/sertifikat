@@ -34,15 +34,15 @@ if(isset($_GET['act'])){
 			if ($data['id_donor'] == $id_donor && $data['kategori'] == $kategori) {
 				header('location:data_sertifikat.php?id_donor='.$id_donor.'&kategori='.$kategori);
 				exit;
-			} else{			
-				//proses simpan data admin
-				$simpan = mysqli_query($konek, "INSERT INTO dsertifikat(nama, id_donor, no_hp, tanggal_lahir, no_sertifikat,kategori) 
-								VALUES ('$nama', '$id_donor', '$no_hp', '$tanggal_lahir','$nosertifikat','$kategori')");
-	
-				if ($simpan) {
-					header('location:data_sertifikat.php');
-					exit;
-				}
+			}
+		} else{			
+			//proses simpan data admin
+			$simpan = mysqli_query($konek, "INSERT INTO dsertifikat(nama, id_donor, no_hp, tanggal_lahir, no_sertifikat,kategori) 
+							VALUES ('$nama', '$id_donor', '$no_hp', '$tanggal_lahir','$nosertifikat','$kategori')");
+
+			if ($simpan) {
+				header('location:data_sertifikat.php');
+				exit;
 			}
 		}
 
