@@ -18,37 +18,46 @@ if(isset($_GET['act'])){
 		$nosertifikat = $_POST['nosertifikat'];
 		$kategori	= $_POST['kategori'];
 
-		// Mengecek apakah id_donor sudah ada di database
-		$cek = mysqli_query($konek, "SELECT id, id_donor, kategori FROM dsertifikat WHERE id_donor = '$id_donor'");
-		$data = mysqli_fetch_array($cek);
-		
 		if($nama=='' || $nosertifikat=='' || $kategori==''){
 			echo "<script>
 			        alert('Data tidak lengkap');
 			        window.location.href = 'data_sertifikat.php';
 			    </script>";
-		} else if($data['kategori'] == $kategori){
-			header('location:data_sertifikat.php?id_donor='.$id_donor.'&kategori='.$kategori);
-		} else{			
-			//proses simpan data admin
-			$simpan = mysqli_query($konek, "INSERT INTO dsertifikat(nama, id_donor, no_hp, tanggal_lahir, no_sertifikat,kategori) 
-							VALUES ('$nama', '$id_donor', '$no_hp', '$tanggal_lahir','$nosertifikat','$kategori')");
+				exit;
+		}
 
-			if ($simpan) {
-				header('location:data_sertifikat.php');
+		// Mengecek apakah id_donor dengan kategori yang sama sudah ada di database
+		$cek = mysqli_query($konek, "SELECT id, id_donor, kategori FROM dsertifikat WHERE id_donor = '$id_donor'");
+		$data = mysqli_fetch_array($cek);
+		
+		if($data){
+			if ($data['id_donor'] == $id_donor && $data['kategori'] == $kategori) {
+				header('location:data_sertifikat.php?id_donor='.$id_donor.'&kategori='.$kategori);
+				exit;
+			} else{			
+				//proses simpan data admin
+				$simpan = mysqli_query($konek, "INSERT INTO dsertifikat(nama, id_donor, no_hp, tanggal_lahir, no_sertifikat,kategori) 
+								VALUES ('$nama', '$id_donor', '$no_hp', '$tanggal_lahir','$nosertifikat','$kategori')");
+	
+				if ($simpan) {
+					header('location:data_sertifikat.php');
+					exit;
+				}
 			}
 		}
+
 	} else if ($_GET['act']=='delete'){
 	    $id = $_GET['id'];
 	        
 	    if ($id) {
 	        $hapus = mysqli_query($konek, "DELETE FROM dsertifikat WHERE id = $id");
 	        if ($hapus) {
-	            
 	            header('location:data_sertifikat.php');
+				exit;
 	        }
 	    } else {
 	        header('location:data_sertifikat.php');
+			exit;
 	    }
 	} else if ($_GET['act'] == 'afterprint') {
 	    $id = $_POST['id'];
